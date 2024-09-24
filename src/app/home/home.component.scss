@@ -1,0 +1,55 @@
+.main-container {
+  //   background-color: rgb(55, 53, 53);
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-con {
+  height: 400px;
+  width: 80%;
+  margin: 20px 40px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(94, 57, 2);
+  box-shadow: 0px 0px 15px 4px #7e5e8a;
+  border-radius: 25px;
+}
+
+.row-con {
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 150px;
+}
+
+.text-con {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: rgb(98, 78, 54);
+  gap: 40px;
+}
+
+.john-henrick {
+  font-size: 70px;
+}
+
+.hello {
+  font-size: 30px;
+}
+
+.swe {
+  font-size: 30px;
+  line-height: 1;
+}
+
+img {
+  height: 362px;
+  width: 270px;
+  border-radius: 50px;
+  border: 5px solid #c69d9d;
+  padding: 0px;
+}
