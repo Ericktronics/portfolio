@@ -1,13 +1,17 @@
-<div class="main-container">
-  <div class="container sub-con">
-    <div class="row row-con">
-      <div class="col text-con">
-        <p class="hello">Hello there, my name is</p>
-        <p class="john-henrick">John Henrick</p>
-        <p class="swe">
+<div class="home">
+  <div class="sub-con home__sub__con">
+    <div class="home__sub__con__row__con">
+      <div class="home__sub__con__row__con__text__con">
+        <p class="home__sub__con__row__con__text__con--hello">
+          Hello there, my name is
+        </p>
+        <p class="home__sub__con__row__con__text__con--john-henrick">
+          John Henrick
+        </p>
+        <p class="home__sub__con__row__con__text__con--swe">
           {{ "I'm a Software engineer with " + yoe + " years of experience" }}
         </p>
-        <div class="svg-row">
+        <div class="home__sub__con__row__con__text__con__svg__row">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -36,7 +40,11 @@
             />
           </svg>
 
-          <button type="button" class="dl-btn" (click)="onSvgClick('resume')">
+          <button
+            type="button"
+            class="home__sub__con__row__con__text__con__svg__row--btn"
+            (click)="onSvgClick('resume')"
+          >
             Download Resume
           </button>
         </div>
