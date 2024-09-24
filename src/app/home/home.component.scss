@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   border: 1px solid rgb(94, 57, 2);
-  box-shadow: 0px 0px 15px 4px #7e5e8a;
+  box-shadow: 0px 0px 15px 4px #6f444f;
   border-radius: 25px;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .swe {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1;
 }
 
@@ -50,6 +50,25 @@ img {
   height: 362px;
   width: 270px;
   border-radius: 50px;
-  border: 5px solid #c69d9d;
+  border: 3px solid #a5593c;
   padding: 0px;
+}
+
+.svg-row {
+  gap: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+  svg {
+    cursor: pointer;
+  }
+}
+
+.dl-btn {
+  background-color: #624e36;
+  color: #e6ded7;
+  border: 2px solid #4c2f00;
+  border-radius: 30px;
+  letter-spacing: 0.25px;
 }
