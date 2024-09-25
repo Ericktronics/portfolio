@@ -24,10 +24,18 @@
     }
 
     &__li__item {
-      letter-spacing: 3px;
+      letter-spacing: 6px;
       font-size: 13px;
       font-weight: 500;
       cursor: pointer;
+      /* background: #e5ddd6; */
+      /* border-radius: 57%; */
+      /* padding: 11px 10px; */
+      &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
+        text-underline-offset: 2px;
+      }
     }
   }
 }
