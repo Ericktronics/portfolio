@@ -1,0 +1,41 @@
+.about {
+  width: 100%;
+  display: flex;
+  padding: 0px 80px;
+  justify-content: center;
+  //   height: 4000px;
+  &__sub {
+    display: flex;
+    padding: 0px 140px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    &__para {
+      display: flex;
+      width: 53.15%;
+      text-wrap: wrap;
+    }
+    &__scroll-view {
+      width: 280px;
+      height: 371px;
+      overflow-y: auto;
+      gap: 2px;
+      table {
+        width: 100%;
+      }
+      tr {
+        display: flex;
+        // justify-content: space-between;
+        width: 100%;
+        padding: 0px 30px;
+      }
+      td,
+      th {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        justify-content: center;
+      }
+    }
+  }
+}
