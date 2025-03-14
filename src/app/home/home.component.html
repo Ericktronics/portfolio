@@ -1,0 +1,55 @@
+<div class="home" id="home">
+  <div class="home__sub__con">
+    <div class="home__sub__con__row__con">
+      <div class="home__sub__con__row__con__text__con">
+        <p class="home__sub__con__row__con__text__con--hello">
+          Hello there, my name is
+        </p>
+        <p class="home__sub__con__row__con__text__con--john-henrick">
+          John Henrick
+        </p>
+        <p class="home__sub__con__row__con__text__con--swe">
+          {{ "I'm a Software Engineer with " + yoe + " years of experience" }}
+        </p>
+        <div class="home__sub__con__row__con__text__con__svg__row">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            fill="currentColor"
+            class="bi bi-linkedin"
+            viewBox="0 0 16 16"
+            (click)="onSvgClick('linkedin')"
+          >
+            <path [attr.d]="linkedInPath" />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            fill="currentColor"
+            class="bi bi-github"
+            viewBox="0 0 16 16"
+            (click)="onSvgClick('github')"
+          >
+            <path [attr.d]="githubPath" />
+          </svg>
+
+          <button
+            type="button"
+            class="home__sub__con__row__con__text__con__svg__row--btn"
+            (click)="onSvgClick('resume')"
+          >
+            Download Resume
+          </button>
+        </div>
+      </div>
+      <img
+        src="../../assets/images/hiking_trip1.JPG"
+        alt="john henrick hiking photo"
+        class="img-me"
+      />
+    </div>
+  </div>
+</div>
