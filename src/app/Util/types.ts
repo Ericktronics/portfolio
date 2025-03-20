@@ -4,4 +4,5 @@ export interface TechConfig {
   width: number;
   height: number;
   yoe: string;
+  name: string;
 }

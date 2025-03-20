@@ -1,0 +1,12 @@
+<div class="tech">
+  <div class="tech__header__div">
+    <h1 class="tech__header__div__main">Technologies</h1>
+  </div>
+  <div class="tech__arr">
+    <div *ngFor="let tech of techArray" class="tech__arr__indivCon">
+      <img [src]="tech.url" [alt]="tech.alt" [width]="tech.width" [height]="tech.height"
+        class="tech__arr__indivCon__img" />
+      <div class="tech__arr__indivCon__name">{{tech.name}}</div>
+    </div>
+  </div>
+</div>
