@@ -73,6 +73,22 @@ export class TechComponent {
       name: 'CSS',
     },
     {
+      url: '../../assets/icons/tailwind.png',
+      alt: 'Tailwind Logo',
+      width: 80,
+      height: 80,
+      yoe: '4 yrs',
+      name: 'Tailwind',
+    },
+    {
+      url: '../../assets/icons/sass.png',
+      alt: 'Sass Logo',
+      width: 80,
+      height: 80,
+      yoe: '4 yrs',
+      name: 'Sass',
+    },
+    {
       url: '../../assets/icons/aws.png',
       alt: 'AWS Logo',
       width: 80,
