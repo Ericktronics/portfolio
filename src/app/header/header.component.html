@@ -1,13 +1,14 @@
-<div class="header">
+<div class="header" [ngClass]="{'header--scrolled': isScrolled}">
   <ul class="header__ul">
     <div class="header__ul__name">
-      <li class="header__ul__li__item">John Henrick</li>
+      <li class="header__ul__li__item"><a href="#home">John Henrick</a></li>
     </div>
     <div class="header__ul__lig">
-      <li class="header__ul__li__item"><a href="home">About</a></li>
-      <li class="header__ul__li__item">Experience</li>
-      <li class="header__ul__li__item">Projects</li>
-      <li class="header__ul__li__item">Contact</li>
+      <li class="header__ul__li__item"><a href="#about">About</a></li>
+      <li class="header__ul__li__item"><a href="#tech">Tech</a></li>
+      <li class="header__ul__li__item"><a href="#experience">Experience</a></li>
+      <li class="header__ul__li__item"><a href="#projects">Projects</a></li>
+      <li class="header__ul__li__item"><a href="#contact">Contact</a></li>
     </div>
   </ul>
 </div>
