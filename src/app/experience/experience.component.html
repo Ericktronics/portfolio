@@ -1,30 +1,38 @@
 <div class="experience">
     <h2>Experience</h2>
-    <ng-container *ngFor="let experience of experienceArray">
-        <div class="experience__timeline">
-            <div class="dot__contiainer">
-                <div class="__circle"></div>
-                <div class="__root"></div>
+    <div>
+        <ng-container *ngFor="let experience of experienceArray">
+            <div class="experience__timeline">
+                <div class="experience__main">
+                    <div class="dot__contiainer">
+                        <div class="__circle"></div>
+                        <div class="__root"></div>
+                    </div>
+                    <div class="experience__content">
+                        <p class="experience__duration">
+                            {{experience.position+', '+ experience.company +', '+ experience.duration }}
+                        </p>
+                        <ul>
+                            <ng-container *ngFor="let item of experience.items">
+                                <li *ngIf="isString(item); else multipleItems">
+                                    {{ item }}
+                                </li>
+                                <ng-template #multipleItems>
+                                    <li *ngIf="isSubItem(item)">
+                                        {{ item.text }}
+                                        <ul class="experience__sublist">
+                                            <li *ngFor="let sub of item.subItems">{{ sub }}</li>
+                                        </ul>
+                                    </li>
+                                </ng-template>
+                            </ng-container>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience__extension" *ngIf="experienceArray.indexOf(experience) !== experienceArray.length - 1">
+                    <div class="dot__extension"></div>
+                </div>
             </div>
-            <div class="experience__content">
-                <p class="experience__duration">
-                    {{experience.position+', '+ experience.company +', '+ experience.duration }}
-                </p>
-                <ul> <ng-container *ngFor="let item of experience.items">
-                        <li *ngIf="isString(item); else multipleItems">
-                            {{ item }}
-                        </li>
-                        <ng-template #multipleItems>
-                            <li *ngIf="isSubItem(item)">
-                                {{ item.text }}
-                                <ul class="experience__sublist">
-                                    <li *ngFor="let sub of item.subItems">{{ sub }}</li>
-                                </ul>
-                            </li>
-                        </ng-template>
-                    </ng-container>
-                </ul>
-            </div>
-        </div>
-    </ng-container>
+        </ng-container>
+    </div>
 </div>

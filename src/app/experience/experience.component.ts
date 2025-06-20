@@ -29,7 +29,7 @@ export class ExperienceComponent {
     {
       company: 'Accenture Inc.',
       position: 'AI Engineering Analyst',
-      duration: 'June 2022 – May 2023 (11 Months)',
+      duration: 'June 2022 - May 2023 (11 Months)',
       items: [
         'Facilitated knowledge transfer to associates and new team members with Git processes, tools, and technologies.',
         'Integrated Role-Based Access Control for the platform to be commercialized and added usage tracking in the platform.',
