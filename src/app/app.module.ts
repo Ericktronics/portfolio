@@ -11,9 +11,12 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { TechComponent } from './tech/tech.component';
+import { CredentialsAwardsComponent } from './credentials-awards/credentials-awards.component';
+import { EducBgComponent } from './educ-bg/educ-bg.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, AboutComponent, ExperienceComponent, ProjectsComponent, ContactComponent, TechComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, AboutComponent, ExperienceComponent, ProjectsComponent, ContactComponent, TechComponent, CredentialsAwardsComponent, EducBgComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
