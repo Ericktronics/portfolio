@@ -1,3 +1,5 @@
+@import "../../styles.scss";
+
 .home {
   height: 600px;
   width: 100%;
@@ -6,6 +8,16 @@
   justify-content: center;
   padding: 0px 80px;
   margin-top: 40px;
+
+  @include respond-to(sm) {
+    padding: 0px 20px;
+    margin-top: 30px;
+  }
+
+  @include respond-to(xs) {
+    padding: 0px 20px;
+    margin-top: 30px;
+  }
 
   &__sub__con {
     height: 80%;
@@ -16,11 +28,37 @@
     box-shadow: 0px 0px 15px 4px #6f444f;
     border-radius: 25px;
 
+    @include respond-to(sm) {
+      width: 100%;
+      flex-direction: column;
+      padding: 10px;
+      justify-content: center;
+      height: auto;
+    }
+
+    @include respond-to(xs) {
+      width: 100%;
+      flex-direction: column;
+      padding: 10px;
+    }
+
     &__row__con {
       display: flex;
       justify-content: space-between;
       width: 100%;
       padding: 0px 140px;
+
+      @include respond-to(sm) {
+        align-items: center;
+        padding: 0px 50px;
+        gap: 15px;
+      }
+
+      @include respond-to(xs) {
+        padding: 0px 20px;
+        flex-direction: column-reverse;
+        gap: 5px;
+      }
 
       &__text__con {
         display: flex;
@@ -63,14 +101,73 @@
             padding: 0px 13px;
           }
         }
+
+        @include respond-to(sm) {
+          text-align: center;
+          gap: 2px;
+
+          &--hello {
+            font-size: 16px;
+          }
+          &--john-henrick {
+            font-size: 25px;
+          }
+          &--swe {
+            font-size: 14px;
+          }
+
+          &__svg__row {
+            flex-direction: row;
+            align-items: center;
+
+            &--btn {
+              padding: 10px 10px;
+              font-size: 12px;
+            }
+          }
+        }
+
+        @include respond-to(xs) {
+          &--hello,
+          &--john-henrick,
+          &--swe {
+            font-size: 16px;
+          }
+
+          &__svg__row {
+            &--btn {
+              padding: 8px 8px;
+              font-size: 10px;
+            }
+          }
+        }
+
+        @include respond-to(xxs) {
+          &__svg__row {
+            &--btn {
+              padding: 4px 4px;
+              font-size: 5px;
+            }
+          }
+        }
       }
 
       img {
-        height: 376px;
-        width: 280px;
+        height: auto;
+        width: 320px;
         border-radius: 50px;
         border: 3px solid #a5593c;
         padding: 0px;
+
+        @include respond-to(lg) {
+          width: 280px;
+          height: auto;
+        }
+
+        @include respond-to(sm) {
+          width: 250px;
+          height: auto;
+        }
       }
     }
   }
