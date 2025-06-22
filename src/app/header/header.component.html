@@ -3,11 +3,18 @@
     <div class="header__ul__name">
       <li class="header__ul__li__item"><a href="#home">John Henrick</a></li>
     </div>
-    <div class="header__ul__lig">
-      <li class="header__ul__li__item"><a href="#about">About</a></li>
-      <li class="header__ul__li__item"><a href="#tech">Tech</a></li>
-      <li class="header__ul__li__item"><a href="#experience">Experience</a></li>
-      <li class="header__ul__li__item"><a href="#C&A">Credentials</a></li>
+    <!-- Hamburger icon for mobile -->
+    <button class="header__hamburger" (click)="toggleMenu()" aria-label="Toggle navigation">
+      <span class="header__hamburger-bar"></span>
+      <span class="header__hamburger-bar"></span>
+      <span class="header__hamburger-bar"></span>
+    </button>
+    <!-- Navigation links, shown/hidden based on menuOpen -->
+    <div #menu class="header__ul__lig" [ngClass]="{'header__ul__lig--open': menuOpen}">
+      <li class="header__ul__li__item"><a href="#about" (click)="closeMenu()">About</a></li>
+      <li class="header__ul__li__item"><a href="#tech" (click)="closeMenu()">Tech</a></li>
+      <li class="header__ul__li__item"><a href="#experience" (click)="closeMenu()">Experience</a></li>
+      <li class="header__ul__li__item"><a href="#C&A" (click)="closeMenu()">Credentials</a></li>
       <!-- <li class="header__ul__li__item"><a href="#projects">Projects</a></li> -->
       <!-- <li class="header__ul__li__item"><a href="#contact">Contact</a></li> -->
     </div>

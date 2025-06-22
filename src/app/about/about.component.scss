@@ -1,3 +1,5 @@
+@import "../../styles.scss";
+
 .about {
   width: 100%;
   display: flex;
@@ -6,6 +8,39 @@
   margin: 40px 0px;
   scroll-behavior: smooth;
 
+  // XL screens
+  @include respond-to(xl) {
+    padding: 0px 60px;
+    margin: 40px 0px;
+  }
+
+  // LG screens
+  @include respond-to(lg) {
+    padding: 0px 40px;
+    margin: 40px 0px;
+  }
+
+  // MD screens
+  @include respond-to(md) {
+    padding: 0px 30px;
+    margin: 40px 0px;
+  }
+
+  // SM screens
+  @include respond-to(sm) {
+    padding: 0px 20px;
+    margin: 60px 20px;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  // XS screens
+  @include respond-to(xs) {
+    padding: 0px 15px;
+    margin: 60px 0px;
+  }
+
   &__sub {
     display: flex;
     padding: 0px 140px;
@@ -13,19 +48,77 @@
     justify-content: space-between;
     gap: 30px;
 
+    @include respond-to(xl) {
+      padding: 0px 100px;
+      gap: 25px;
+    }
+    @include respond-to(lg) {
+      padding: 0px 60px;
+      gap: 20px;
+    }
+    @include respond-to(md) {
+      padding: 0px 30px;
+      gap: 15px;
+    }
+    @include respond-to(sm) {
+      padding: 0px 20px;
+      gap: 10px;
+    }
+    @include respond-to(xs) {
+      padding: 0px 25px;
+      gap: 8px;
+    }
+    @include respond-to(xxs) {
+      padding: 0px 25px;
+      gap: 5px;
+    }
+
     &__aboutme {
       font-size: 43px;
       color: rgb(98, 78, 54);
+
+      @include respond-to(lg) {
+        font-size: 36px;
+      }
+      @include respond-to(md) {
+        font-size: 30px;
+      }
+      @include respond-to(sm) {
+        font-size: 24px;
+      }
+      @include respond-to(xs) {
+        font-size: 20px;
+        margin-bottom: 0px;
+      }
+      @include respond-to(xxs) {
+        font-size: 16px;
+      }
     }
 
     &__para {
       display: flex;
       width: 100%;
-      text-wrap: wrap;
+      flex-wrap: wrap;
       align-items: center;
       font-size: 25px;
       line-height: 2;
       color: rgb(98, 78, 54);
+
+      @include respond-to(lg) {
+        font-size: 22px;
+      }
+      @include respond-to(md) {
+        font-size: 18px;
+      }
+      @include respond-to(sm) {
+        font-size: 16px;
+      }
+      @include respond-to(xs) {
+        font-size: 14px;
+      }
+      @include respond-to(xxs) {
+        font-size: 12px;
+      }
     }
   }
 }

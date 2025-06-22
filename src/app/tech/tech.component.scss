@@ -1,3 +1,5 @@
+@import "../../styles.scss";
+
 .tech {
   display: flex;
   flex-direction: column;
@@ -6,9 +8,67 @@
   gap: 30px;
   scroll-behavior: smooth;
 
+  // XL screens
+  @include respond-to(xl) {
+    margin: 35px 60px;
+    padding: 0px 100px;
+    gap: 25px;
+  }
+
+  // LG screens
+  @include respond-to(lg) {
+    margin: 30px 40px;
+    padding: 0px 60px;
+    gap: 20px;
+  }
+
+  // MD screens
+  @include respond-to(md) {
+    margin: 25px 30px;
+    padding: 0px 30px;
+    gap: 15px;
+  }
+
+  // SM screens
+  @include respond-to(sm) {
+    margin: 20px;
+    padding: 0px 40px;
+    gap: 10px;
+  }
+
+  // XS screens
+  @include respond-to(xs) {
+    margin: 15px 0px;
+    padding: 0px 40px;
+    gap: 8px;
+  }
+
+  // XXS screens
+  @include respond-to(xxs) {
+    // margin: 10px 2px;
+    // padding: 0px 2px;
+    gap: 5px;
+  }
+
   &__header__div__main {
     font-size: 43px;
     color: rgb(98, 78, 54);
+
+    @include respond-to(lg) {
+      font-size: 36px;
+    }
+    @include respond-to(md) {
+      font-size: 30px;
+    }
+    @include respond-to(sm) {
+      font-size: 24px;
+    }
+    @include respond-to(xs) {
+      font-size: 20px;
+    }
+    @include respond-to(xxs) {
+      font-size: 16px;
+    }
   }
 
   &__arr {
@@ -18,6 +78,22 @@
     flex-wrap: wrap;
     gap: 58px;
 
+    @include respond-to(lg) {
+      gap: 40px;
+    }
+    @include respond-to(md) {
+      gap: 30px;
+    }
+    @include respond-to(sm) {
+      gap: 40px;
+    }
+    @include respond-to(xs) {
+      gap: 25px;
+    }
+    @include respond-to(xxs) {
+      // gap: 8px;
+    }
+
     &__indivCon {
       display: flex;
       flex-direction: column;
@@ -25,6 +101,22 @@
       align-items: center;
       padding: 5px 10px;
       border: solid 1px #995338;
+
+      @include respond-to(lg) {
+        padding: 5px 8px;
+      }
+      @include respond-to(md) {
+        padding: 4px 6px;
+      }
+      @include respond-to(sm) {
+        padding: 3px 4px;
+      }
+      @include respond-to(xs) {
+        padding: 2px 2px;
+      }
+      @include respond-to(xxs) {
+        padding: 1px 1px;
+      }
     }
 
     &__indivCon:hover {

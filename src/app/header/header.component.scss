@@ -18,6 +18,40 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
+  &__hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+
+    @include respond-to(md) {
+      display: flex;
+    }
+
+    &-bar {
+      width: 28px;
+      height: 3px;
+      background: #fff;
+      margin: 2px 0;
+      border-radius: 2px;
+      transition: 0.3s;
+      @include respond-to(md) {
+        width: 30px;
+        height: 4px;
+      }
+      @include respond-to(xxs) {
+        width: 20px;
+        height: 2px;
+      }
+    }
+  }
+
   &__ul {
     display: flex;
     flex-direction: row;
@@ -29,6 +63,10 @@
     padding: 0px 80px;
     list-style: none;
 
+    @include respond-to(md) {
+      padding: 0px 30px;
+    }
+
     @include respond-to(sm) {
       padding: 0px 20px;
     }
@@ -37,17 +75,43 @@
       padding: 0px 15px;
     }
 
+    @include respond-to(xxs) {
+      padding: 0px 20px;
+    }
+
     &__lig {
       display: flex;
       flex-direction: row;
       gap: 27px;
 
-      @include respond-to(sm) {
-        gap: 10px;
+      @include respond-to(md) {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: #9d8877;
+        flex-direction: column;
+        width: 180px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 15px 0;
+        z-index: 1050;
       }
 
       @include respond-to(xs) {
         gap: 5px;
+      }
+
+      &--open {
+        width: auto;
+        display: flex;
+        @include respond-to(md) {
+          justify-content: stretch;
+          align-items: center;
+          gap: 7px;
+        }
+        li {
+          padding: 0px 25px;
+        }
       }
     }
 
@@ -56,18 +120,24 @@
       font-size: 15px;
       font-weight: 300;
       cursor: pointer;
-      text-underline-offset: 3px;
+      text-underline-offset: 5px;
       &:hover {
         text-decoration: underline;
         text-decoration-thickness: 1.5px;
+        text-decoration-color: #ffffff;
+        transform: scale(1.05);
       }
       @include respond-to(sm) {
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 3px;
       }
 
       @include respond-to(xs) {
-        font-size: 10px;
+        font-size: 13px;
+        letter-spacing: 2px;
+      }
+      @include respond-to(xxs) {
+        font-size: 12px;
         letter-spacing: 2px;
       }
     }
