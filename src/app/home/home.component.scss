@@ -1,298 +1,138 @@
 @import "../../styles.scss";
 
 .home {
-  height: 600px;
   width: 100%;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 80px;
   margin-top: 4.4rem;
 
-  // XL screens
-  @include respond-to(xl) {
-    padding: 0 60px;
-    // margin-top: 35px;
-    height: 550px;
-  }
-
-  // LG screens
-  @include respond-to(lg) {
-    padding: 0 40px;
-    // margin-top: 30px;
-    height: 500px;
-  }
-
-  // MD screens
-  @include respond-to(md) {
-    padding: 0 30px;
-    // margin-top: 25px;
-    height: 450px;
-  }
-
-  // SM screens
-  @include respond-to(sm) {
-    padding: 0 20px;
-    // margin-top: 20px;
-    height: auto;
-  }
-
-  // XS screens
-  @include respond-to(xs) {
-    margin-top: 5.4rem;
-    padding: 0 15px;
-    // margin-top: 15px;
-    height: auto;
-  }
-
-  // XXS screens
-  @include respond-to(xxs) {
-    padding: 0 20px;
-    // margin-top: 10px;
-    height: auto;
-  }
+  @include respond-to(xl) { padding: 0 60px; height: 550px; }
+  @include respond-to(lg) { padding: 0 40px; height: 500px; }
+  @include respond-to(md) { padding: 0 30px; height: 450px; }
+  @include respond-to(sm) { padding: 0 20px; height: auto; }
+  @include respond-to(xs) { padding: 0 15px; margin-top: 5.4rem; height: auto; }
+  @include respond-to(xxs) { padding: 0 10px; height: auto; }
 
   &__sub__con {
-    height: 80%;
     width: 100%;
+    height: 80%;
     display: flex;
     align-items: center;
     border: 1px solid rgb(94, 57, 2);
     box-shadow: 0 0 15px 4px #6f444f;
     border-radius: 25px;
 
-    @include respond-to(xl) {
-      padding: 20px;
-    }
-    @include respond-to(lg) {
-      padding: 15px;
-    }
-    @include respond-to(md) {
-      padding: 10px;
-    }
-    @include respond-to(sm) {
-      flex-direction: column;
-      padding: 8px;
-      height: auto;
-    }
-    @include respond-to(xs) {
-      flex-direction: column;
-      padding: 25px;
-      height: auto;
-    }
-    @include respond-to(xxs) {
-      flex-direction: column;
-      padding: 20px;
-      height: auto;
+    @include respond-to(xl) { padding: 20px; }
+    @include respond-to(lg) { padding: 15px; }
+    @include respond-to(md) { padding: 10px; }
+    @include respond-to(sm) { flex-direction: column; padding: 8px; height: auto; }
+    @include respond-to(xs) { flex-direction: column; padding: 12px; height: auto; }
+    @include respond-to(xxs) { flex-direction: column; padding: 8px; height: auto; }
+  }
+
+  &__sub__con__row__con {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 140px;
+
+    @include respond-to(xl) { padding: 0 100px; }
+    @include respond-to(lg) { padding: 0 60px; }
+    @include respond-to(md) { align-items: center; padding: 0 10px; gap: 10px; justify-content: space-evenly; }
+    @include respond-to(xs) { padding: 0 5px; gap: 8px; flex-direction: column-reverse; }
+    @include respond-to(xxs) { padding: 0 2px; gap: 7px; flex-direction: column-reverse; }
+  }
+
+  &__sub__con__row__con__text__con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgb(98, 78, 54);
+    gap: 50px;
+
+    @include respond-to(md) { gap: 30px; }
+    @include respond-to(sm) { align-items: center; text-align: center; gap: 20px; }
+    @include respond-to(xs) { gap: 10px; }
+    @include respond-to(xxs) { gap: 8px; }
+
+    &--hello {
+      font-size: 1.5rem;
+      @include respond-to(md) { font-size: 1.3rem; }
+      @include respond-to(sm) { font-size: 1.1rem; }
+      @include respond-to(xs) { font-size: 1rem; }
+      @include respond-to(xxs) { font-size: 0.9rem; }
     }
 
-    &__row__con {
+    &--john-henrick {
+      font-size: 4rem;
+      @include respond-to(md) { font-size: 3rem; }
+      @include respond-to(sm) { font-size: 2.2rem; }
+      @include respond-to(xs) { font-size: 1.5rem; }
+      @include respond-to(xxs) { font-size: 1.1rem; }
+    }
+
+    &--swe {
+      font-size: 1.25rem;
+      line-height: 1;
+      @include respond-to(md) { font-size: 1.1rem; }
+      @include respond-to(sm) { font-size: 1rem; }
+      @include respond-to(xs) { font-size: 0.9rem; }
+      @include respond-to(xxs) { font-size: 0.8rem; }
+    }
+
+    &__svg__row {
       display: flex;
-      justify-content: space-between;
+      flex-direction: row;
+      justify-content: space-evenly;
       width: 100%;
-      padding: 0 140px;
+      gap: 20px;
 
-      @include respond-to(xl) {
-        padding: 0 100px;
-      }
-      @include respond-to(lg) {
-        padding: 0 60px;
-      }
-      @include respond-to(md) {
-        align-items: center;
-        padding: 0 10px;
-        gap: 10px;
-        flex-direction: row;
-        justify-content: space-evenly;
-      }
-      @include respond-to(sm) {
-        // align-items: center;
-        // padding: 0 10px;
-        // gap: 10px;
-        // flex-direction: row;
-        // justify-content: space-evenly;
-      }
-      @include respond-to(xs) {
-        padding: 0 5px;
-        gap: 8px;
-        flex-direction: column-reverse;
-      }
-      @include respond-to(xxs) {
-        padding: 0 2px;
-        gap: 7px;
-        flex-direction: column-reverse;
+      @include respond-to(md) { gap: 15px; }
+      @include respond-to(sm) { gap: 10px; }
+      @include respond-to(xs) { gap: 5px; }
+      @include respond-to(xxs) { gap: 2px; }
+
+      svg {
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        @include respond-to(md) { width: 50px; height: 50px; }
+        @include respond-to(sm) { width: 35px; height: 35px; }
+        @include respond-to(xs) { width: 30px; height: 30px; }
+        @include respond-to(xxs) { width: 25px; height: 25px; }
       }
 
-      &__text__con {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        color: rgb(98, 78, 54);
-        gap: 50px;
-
-        @include respond-to(md) {
-          gap: 30px;
-        }
-        @include respond-to(sm) {
-          align-items: center;
-          text-align: center;
-          gap: 20px;
-        }
-        @include respond-to(xs) {
-          align-items: center;
-          text-align: center;
-          gap: 10px;
-        }
-        @include respond-to(xxs) {
-          align-items: center;
-          text-align: center;
-          gap: 8px;
-        }
-
-        &--hello {
-          font-size: 1.5rem;
-          @include respond-to(md) {
-            font-size: 1.3rem;
-          }
-          @include respond-to(sm) {
-            font-size: 1.1rem;
-          }
-          @include respond-to(xs) {
-            font-size: 1rem;
-            margin-bottom: 0px;
-          }
-          @include respond-to(xxs) {
-            font-size: 0.9rem;
-          }
-        }
-
-        &--john-henrick {
-          font-size: 4rem;
-          @include respond-to(md) {
-            font-size: 3rem;
-          }
-          @include respond-to(sm) {
-            font-size: 2.2rem;
-          }
-          @include respond-to(xs) {
-            font-size: 1.5rem;
-            margin-bottom: 0px;
-          }
-          @include respond-to(xxs) {
-            font-size: 1.1rem;
-          }
-        }
-
-        &--swe {
-          font-size: 1.25rem;
-          line-height: 1;
-          @include respond-to(md) {
-            font-size: 1.1rem;
-          }
-          @include respond-to(sm) {
-            font-size: 1rem;
-          }
-          @include respond-to(xs) {
-            font-size: 0.9rem;
-            margin-bottom: 0px;
-          }
-          @include respond-to(xxs) {
-            font-size: 0.8rem;
-          }
-        }
-
-        &__svg__row {
-          gap: 20px;
-          display: flex;
-          justify-content: space-evenly;
-          flex-direction: row;
-          width: 100%;
-
-          @include respond-to(md) {
-            gap: 15px;
-          }
-          @include respond-to(sm) {
-            gap: 10px;
-          }
-          @include respond-to(xs) {
-            gap: 5px;
-          }
-          @include respond-to(xxs) {
-            gap: 2px;
-          }
-
-          svg {
-            cursor: pointer;
-            width: 60px;
-            height: 60px;
-            @include respond-to(md) {
-              width: 50px;
-              height: 50px;
-            }
-            @include respond-to(sm) {
-              width: 35px;
-              height: 35px;
-            }
-            @include respond-to(xs) {
-              width: 30px;
-              height: 30px;
-            }
-            @include respond-to(xxs) {
-              width: 25px;
-              height: 25px;
-            }
-          }
-
-          &--btn {
-            background-color: #624e36;
-            color: #e6ded7;
-            border: 2px solid #4c2f00;
-            border-radius: 30px;
-            letter-spacing: 0.25px;
-            padding: 0 13px;
-            font-size: 1rem;
-            @include respond-to(md) {
-              font-size: 0.9rem;
-            }
-            @include respond-to(sm) {
-              font-size: 0.8rem;
-            }
-            @include respond-to(xs) {
-              font-size: 0.7rem;
-            }
-            @include respond-to(xxs) {
-              font-size: 0.6rem;
-            }
-          }
-        }
-      }
-
-      img {
-        height: auto;
-        width: 320px;
-        border-radius: 20px;
-        border: 3px solid #a5593c;
-        padding: 0;
-        @include respond-to(xl) {
-          width: 280px;
-        }
-        @include respond-to(lg) {
-          width: 220px;
-        }
-        @include respond-to(md) {
-          width: 200px;
-        }
-        @include respond-to(sm) {
-          width: 190px;
-        }
-        @include respond-to(xs) {
-          width: 170px;
-        }
-        @include respond-to(xxs) {
-          width: 160px;
-        }
+      &--btn {
+        background-color: #624e36;
+        color: #e6ded7;
+        border: 2px solid #4c2f00;
+        border-radius: 30px;
+        letter-spacing: 0.25px;
+        padding: 0 13px;
+        font-size: 1rem;
+        @include respond-to(md) { font-size: 0.9rem; }
+        @include respond-to(sm) { font-size: 0.8rem; }
+        @include respond-to(xs) { font-size: 0.7rem; }
+        @include respond-to(xxs) { font-size: 0.6rem; }
       }
     }
+  }
+
+  &__sub__con__row__con img {
+    height: auto;
+    width: 320px;
+    border-radius: 20px;
+    border: 3px solid #a5593c;
+    padding: 0;
+    @include respond-to(xl) { width: 280px; }
+    @include respond-to(lg) { width: 220px; }
+    @include respond-to(md) { width: 200px; }
+    @include respond-to(sm) { width: 190px; }
+    @include respond-to(xs) { width: 170px; }
+    @include respond-to(xxs) { width: 160px; }
   }
 }
