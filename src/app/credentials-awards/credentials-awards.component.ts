@@ -38,4 +38,23 @@ export class CredentialsAwardsComponent {
         'Intensive training program on Java back-end development practices.',
     },
   ];
+
+  awardsArray = [
+    {
+      imgSrource: '../../assets/images/2024_jan_tom.png',
+      title: 'January 2024 Team of the Month',
+    },
+    {
+      imgSrource: '../../assets/images/2024_june_tom.png',
+      title: 'June 2024 Team of the Month',
+    },
+    {
+      imgSrource: '../../assets/images/2024_rockstar.png',
+      title: '2024 Rockstar Contributor Award',
+    },
+    {
+      imgSrource: '../../assets/images/2025_feb_tom.png',
+      title: 'February 2025 Team of the Month',
+    },
+  ];
 }
