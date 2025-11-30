@@ -97,6 +97,22 @@ export class TechComponent {
       name: 'AWS',
     },
     {
+      url: '../../assets/icons/gcp.png',
+      alt: 'GCP Logo',
+      width: 80,
+      height: 80,
+      yoe: '4 yrs',
+      name: 'GCP',
+    },
+    {
+      url: '../../assets/icons/k8s.png',
+      alt: 'AWS Logo',
+      width: 80,
+      height: 80,
+      yoe: '4 yrs',
+      name: 'Kubernetes',
+    },
+    {
       url: '../../assets/icons/azure.png',
       alt: 'Azure Logo',
       width: 80,
