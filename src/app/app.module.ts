@@ -17,7 +17,11 @@ import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, HomeComponent, AboutComponent, ExperienceComponent, ProjectsComponent, ContactComponent, TechComponent, CredentialsAwardsComponent, EducBgComponent, FooterComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule.withServerTransition({ appId: 'portfolio' }),
+    AppRoutingModule,
+    BrowserAnimationsModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
