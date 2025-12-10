@@ -70,7 +70,7 @@ export class CredentialsAwardsComponent {
     },
     {
       imgSrource: '../../assets/images/2025_malasakit.jpg',
-      title: '2024 Malasakit Award',
+      title: '2025 Malasakit Award',
     },
   ];
 }
