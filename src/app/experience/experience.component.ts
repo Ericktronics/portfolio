@@ -11,7 +11,7 @@ export class ExperienceComponent {
     {
       company: 'Samsung Research & Development Philippines (SRPH)',
       position: 'Engineer II',
-      duration: 'May 2023 - Feb 2026',
+      duration: 'May 2023 - Feb 2026 (2yrs and 9 Months)',
       items: [
         'Integrated AWS Key Generator service to an Admin Server to minimize AWS access.',
         'POC session update for every page change in one of our Admin Portal.',
