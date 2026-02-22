@@ -11,7 +11,7 @@ export class ExperienceComponent {
     {
       company: 'Samsung Research & Development Philippines (SRPH)',
       position: 'Engineer II',
-      duration: 'May 2023 - Present',
+      duration: 'May 2023 - Feb 2026',
       items: [
         'Integrated AWS Key Generator service to an Admin Server to minimize AWS access.',
         'POC session update for every page change in one of our Admin Portal.',
@@ -24,6 +24,8 @@ export class ExperienceComponent {
         'Seamless Authentication connection between 2 admin portals.',
         'CRUD Operation for an API using Express js with TypeScript.',
         'Implementation of MFA in one of our Admin Portal using Amazon Cognito.',
+        'Migrated applications from AWS to GCP.',
+        'Lead the development of Bixby 4.0 web application. Integrated 3 web applications. Created Helm charts for deploying it to GKE.'
       ],
     },
     {
