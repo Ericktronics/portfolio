@@ -41,16 +41,20 @@ export class CredentialsAwardsComponent {
 
   awardsArray = [
     {
-      imgSrource: '../../assets/images/2024_jan_tom.png',
-      title: 'January 2024 Team of the Month',
+      imgSrource: '../../assets/images/2025_oct_eom.JPG',
+      title: 'October 2025 Employee of the Month',
     },
     {
-      imgSrource: '../../assets/images/2024_june_tom.png',
-      title: 'June 2024 Team of the Month',
+      imgSrource: '../../assets/images/2025_rockstart.jpg',
+      title: '2025 Rockstar Award',
     },
     {
       imgSrource: '../../assets/images/2024_rockstar.png',
       title: '2024 Rockstar Contributor Award',
+    },
+    {
+      imgSrource: '../../assets/images/2025_malasakit.jpg',
+      title: '2025 Malasakit Award',
     },
     {
       imgSrource: '../../assets/images/2025_feb_tom.png',
@@ -61,16 +65,12 @@ export class CredentialsAwardsComponent {
       title: 'July 2025 Team of the Month',
     },
     {
-      imgSrource: '../../assets/images/2025_oct_eom.JPG',
-      title: 'October 2025 Employee of the Month',
+      imgSrource: '../../assets/images/2024_jan_tom.png',
+      title: 'January 2024 Team of the Month',
     },
     {
-      imgSrource: '../../assets/images/2025_rockstart.jpg',
-      title: '2025 Rockstar Award',
-    },
-    {
-      imgSrource: '../../assets/images/2025_malasakit.jpg',
-      title: '2025 Malasakit Award',
+      imgSrource: '../../assets/images/2024_june_tom.png',
+      title: 'June 2024 Team of the Month',
     },
   ];
 }

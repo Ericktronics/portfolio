@@ -9,6 +9,14 @@ import { Experience, SubItem } from '../Util/types';
 export class ExperienceComponent {
   experienceArray: Experience[] = [
     {
+      company: 'ELMO Software Inc.',
+      position: 'Software Engineer',
+      duration: 'February 2026 - Present',
+      items: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      ],
+    },
+    {
       company: 'Samsung Research & Development Philippines (SRPH)',
       position: 'Engineer II',
       duration: 'May 2023 - Feb 2026 (2yrs and 9 Months)',
