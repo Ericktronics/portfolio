@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://henrick-portfolio.jhrp-ph.com/sitemap.xml
