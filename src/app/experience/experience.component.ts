@@ -13,7 +13,10 @@ export class ExperienceComponent {
       position: 'Software Engineer',
       duration: 'February 2026 - Present',
       items: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'Add UK Taxation, Pension and Bank Account of employee to public APIs for Integration with ELMO Payroll.',
+        'Contributed to MCP server creation with Oauth2 related features',
+        'Enhance Public APIs to meet client requirements, this involves, param searching, param, targeting and rate limit increases.',
+        'Created a full stack load testing tool to test the performance of ELMO APIs againts different scenarios and load conditions.',
       ],
     },
     {

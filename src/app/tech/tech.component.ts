@@ -216,5 +216,29 @@ export class TechComponent {
       yoe: '4 yrs',
       name: 'Java',
     },
+    {
+      url: '../../assets/icons/php.png',
+      alt: 'PHP Logo',
+      width: 80,
+      height: 80,
+      yoe: '1 yrs',
+      name: 'PHP',
+    },
+    {
+      url: '../../assets/icons/symfony.png',
+      alt: 'Symfony Logo',
+      width: 80,
+      height: 80,
+      yoe: '1 yrs',
+      name: 'Symfony',
+    },
+    {
+      url: '../../assets/icons/jenkins.png',
+      alt: 'Jenkins Logo',
+      width: 80,
+      height: 80,
+      yoe: '1 yrs',
+      name: 'Jenkins',
+    },
   ];
 }
