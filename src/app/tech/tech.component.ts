@@ -106,7 +106,7 @@ export class TechComponent {
     },
     {
       url: '../../assets/icons/k8s.png',
-      alt: 'AWS Logo',
+      alt: 'Kubernetes Logo',
       width: 80,
       height: 80,
       yoe: '4 yrs',
@@ -146,7 +146,7 @@ export class TechComponent {
     },
     {
       url: '../../assets/icons/docker.png',
-      alt: 'Dcoker Logo',
+      alt: 'Docker Logo',
       width: 80,
       height: 80,
       yoe: '4 yrs',
@@ -186,7 +186,7 @@ export class TechComponent {
     },
     {
       url: '../../assets/icons/jwt.png',
-      alt: 'SQL Logo',
+      alt: 'JWT Logo',
       width: 80,
       height: 80,
       yoe: '4 yrs',

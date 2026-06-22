@@ -5,14 +5,17 @@
   <title>John Henrick Peralta | Software Engineer</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="John Henrick Peralta is a Software Engineer with 6+ years of experience in front-end, back-end, and DevOps. AWS and Azure certified, skilled in Angular, React, Node.js, Docker, and Kubernetes.">
+  <meta name="description" content="John Henrick Peralta — Software Engineer based in the Philippines. 6+ years building Angular, React, and Node.js apps. AWS Solutions Architect, Developer, and Cloud Practitioner certified. Currently at ELMO Software.">
   <meta name="robots" content="index, follow">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://henrick-portfolio.jhrp-ph.com/">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+  <link rel="icon" type="image/png" href="/assets/images/logo.png">
+  <link rel="apple-touch-icon" href="/assets/images/logo.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#a5593c">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -29,6 +32,9 @@
   <meta name="twitter:description" content="Software Engineer with 6+ years of experience in front-end, back-end, and DevOps. AWS and Azure certified.">
   <meta name="twitter:image" content="https://henrick-portfolio.jhrp-ph.com/assets/images/hiking_trip1.JPG">
 
+  <!-- LCP image preload -->
+  <link rel="preload" as="image" href="/assets/images/hiking_trip1.JPG" fetchpriority="high">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,6 +42,14 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "John Henrick Peralta Portfolio",
+    "url": "https://henrick-portfolio.jhrp-ph.com/"
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -61,11 +75,30 @@
     "hasCredential": [
       {
         "@type": "EducationalOccupationalCredential",
-        "name": "AWS Certification"
+        "name": "AWS Certified Cloud Practitioner",
+        "credentialCategory": "certification",
+        "recognizedBy": { "@type": "Organization", "name": "Amazon Web Services" },
+        "dateCreated": "2024-03"
       },
       {
         "@type": "EducationalOccupationalCredential",
-        "name": "Azure Certification"
+        "name": "AWS Certified Developer – Associate",
+        "credentialCategory": "certification",
+        "recognizedBy": { "@type": "Organization", "name": "Amazon Web Services" },
+        "dateCreated": "2024-03"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "AWS Certified Solutions Architect – Associate",
+        "credentialCategory": "certification",
+        "recognizedBy": { "@type": "Organization", "name": "Amazon Web Services" },
+        "dateCreated": "2024-03"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Microsoft Azure Fundamentals AZ-900",
+        "credentialCategory": "certification",
+        "recognizedBy": { "@type": "Organization", "name": "Microsoft" }
       }
     ]
   }

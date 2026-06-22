@@ -5,9 +5,9 @@
         <p class="home__sub__con__row__con__text__con--hello">
           Hello there, my name is
         </p>
-        <p class="home__sub__con__row__con__text__con--john-henrick">
+        <h1 class="home__sub__con__row__con__text__con--john-henrick">
           John Henrick Peralta
-        </p>
+        </h1>
         <p class="home__sub__con__row__con__text__con--swe">
           {{ "I'm a Software Engineer with " + yoe + " years of experience" }}
         </p>
@@ -45,11 +45,17 @@
           </button>
         </div>
       </div>
-      <img
-        src="../../assets/images/hiking_trip1.JPG"
-        alt="john henrick hiking photo"
-        class="img-me"
-      />
+      <picture>
+        <source srcset="../../assets/images/hiking_trip1.webp" type="image/webp">
+        <img
+          src="../../assets/images/hiking_trip1.JPG"
+          alt="John Henrick Peralta, Software Engineer"
+          class="img-me"
+          width="320"
+          height="427"
+          fetchpriority="high"
+        />
+      </picture>
     </div>
   </div>
 </div>
