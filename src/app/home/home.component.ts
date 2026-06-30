@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 @Component({
   selector: 'app-home',
@@ -22,6 +23,7 @@ export class HomeComponent implements OnInit {
   constructor(private breakpointObserver: BreakpointObserver) {
     this.breakpointObserver
       .observe(['(max-width: 1440px)'])
+      .pipe(takeUntilDestroyed())
       .subscribe((result) => {
         this.isSmallScreen = result.matches;
       });
@@ -52,7 +54,7 @@ export class HomeComponent implements OnInit {
       case 'resume':
         let link = document.createElement('a');
         link.download = 'John Henrick Peralta Resume';
-        link.href = '../../assets/John Henrick Peralta Resume.pdf';
+        link.href = 'assets/Resume_Peralta_JohnHenrick.pdf';
         link.click();
         break;
     }
