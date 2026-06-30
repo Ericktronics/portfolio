@@ -3,7 +3,7 @@
   "short_name": "Henrick Portfolio",
   "description": "Software Engineer — Angular, React, Node.js, AWS",
   "start_url": "/",
-  "display": "standalone",
+  "display": "browser",
   "background_color": "#ffffff",
   "theme_color": "#a5593c",
   "icons": [
